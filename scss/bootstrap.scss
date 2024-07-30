@@ -1,0 +1,40 @@
+/******* Customized Bootstrap ********/
+
+$primary: #4C9057;
+$secondary: #9FDC7F;
+$light: #F9F8F6;
+$dark: #1C1A1D;
+$csac: #6c757d;
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$headings-font-family: 'PT Serif', serif;
+
+$body-color: #747d88;
+
+$headings-color: $dark;
+
+$headings-font-weight: 400;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 10px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+// Carousel Sass variables
+$carousel-control-color:             #4C9057;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+@import "bootstrap/scss/bootstrap";
