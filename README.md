@@ -1,5 +1,5 @@
 
-  Website Name: Physiotherapiepraxis Kirchberg <br>
+  <h1>Physiotherapiepraxis Kirchberg</h1> <br>
   Author: Lukas Kirchberg <br>
   Status: abgeschlossen <br>
   Techstack: HTML, CSS, JS, PHP, Bootstrap <br>
