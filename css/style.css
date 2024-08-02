@@ -11,7 +11,6 @@
   visibility: visible;
   opacity: 1;
 }
-/*** Spinner End ***/
 
 .back-to-top {
   position: fixed;
@@ -93,7 +92,6 @@
   padding: 10px 0;
   background: var(--bs-secondary) !important;
 }
-/*** Topbar End ***/
 
 /*** Navbar Start ***/
 .navbar .navbar-nav .nav-link {
@@ -154,7 +152,6 @@
 #searchModal .modal-content {
   background: rgba(250, 250, 250, 0.6);
 }
-/*** Navbar End ***/
 
 /*** Carousel Start ***/
 .carousel-item {
@@ -202,7 +199,7 @@
 @media (max-width: 1200px) {
   .carousel-control-prev .carousel-control-prev-icon,
   .carousel-control-next .carousel-control-next-icon {
-  background: transparent;
+    background: transparent;
   }
 }
 
@@ -247,7 +244,6 @@
   border-right: 15px solid var(--bs-primary);
   border-left: 15px solid var(--bs-primary);
 }
-/*** Carousel End ***/
 
 .bg-breadcrumb {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -258,7 +254,7 @@
 }
 
 /*** About Start ***/
-/*** Youtube Video start ***/
+/*** Youtube Video Start ***/
 .video {
   position: relative;
   padding-right: 70px;
@@ -361,8 +357,6 @@
   background: #000000;
   opacity: 1;
 }
-/*** Youtube Video End ***/
-/*** About End ***/
 
 /*** Appointment  Start ***/
 .appointment {
@@ -385,7 +379,6 @@
   object-fit: cover;
   border-radius: 10px;
 }
-/*** Appointment End ***/
 
 /*** Team Start ***/
 .team .team-item {
@@ -442,7 +435,6 @@
 .team .team-item:hover .team-text {
   background: var(--bs-secondary);
 }
-/*** Team End ***/
 
 /*** Testimonial Start ***/
 .testimonial {
@@ -481,7 +473,6 @@
 .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
   color: var(--bs-primary);
 }
-/*** Testimonial end ***/
 
 /*** Contact Start ***/
 .contact {
@@ -493,7 +484,6 @@
 .contact .contact-form {
   background: rgba(255, 255, 255, 0.6);
 }
-/*** Contact End ***/
 
 /*** Footer start ***/
 .footer {
@@ -512,11 +502,9 @@
   letter-spacing: 2px;
   color: var(--bs-primary) !important;
 }
-/*** Footer End ***/
 
 /*** Copyright Start ***/
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: var(--bs-dark) !important;
 }
-/*** Copyright end ***/
