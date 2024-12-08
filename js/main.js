@@ -1,89 +1,65 @@
-(function ($) {
-    "use strict";
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner(0);
-    
-    // Initiierung wowjs, wichtig für verschiedene Animationen wie bspw. langsames Scrollen beim back to top Button
-    new WOW().init();
-
-    // Fixed Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-        } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-200px');
-        }
-    });
-    
-   // Back to top Button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
+// Spinner
+document.addEventListener("DOMContentLoaded", () => {
+    const spinner = document.querySelector("#spinner");
+    if (spinner) {
+        spinner.classList.remove("show");
     }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+});
 
-    // Testimonial-Carousel, wichtig für bspw. Autoplay des Carousels
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 2000,
-        center: false,
-        dots: true,
+
+// Fixed Navbar ab 150px downscroll
+window.addEventListener("scroll", () => {
+    const stickyTop = document.querySelector(".sticky-top");
+    if (window.scrollY > 150) {
+        stickyTop?.classList.add("shadow-sm");
+        stickyTop?.style.setProperty("top", "0px");
+    } else {
+        stickyTop?.classList.remove("shadow-sm");
+        stickyTop?.style.setProperty("top", "-200px");
+    }
+});
+    
+
+// Back to top Button
+const backToTop = document.querySelector(".back-to-top");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+// Swiper
+document.addEventListener('DOMContentLoaded', function () {
+    // init Swiper
+    const swiper = new Swiper(".Myswiper", {
         loop: true,
-        margin: 25,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsiveClass: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:1
-            },
-            992:{
-                items:2
-            },
-            1200:{
-                items:2
-            }
+        speed: 1000,
+        direction: 'horizontal',
+          autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEL: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // spaceBetween: 0,
+        // slidesPerView: 1,
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
         }
-    });
-
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
-})(jQuery);
+      });
+});
