@@ -2,315 +2,473 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <title>Physiotherapiepraxis Muster | News</title>
+    <title>Physiotherapiepraxis Muster</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Physiotherapie Sport Gesundheit Körper" name="keywords" />
-    <meta content="Willkommen bei der Physiotherapiepraxis Ihres Vertrauens! Wir möchten Ihnen helfen wieder Gesundheit zu werden." name="description" />
+    <meta
+      content="Willkommen bei der Physiotherapiepraxis Ihres Vertrauens! Wir möchten Ihnen helfen wieder Gesundheit zu werden."
+      name="description"
+    />
 
     <!-- Icon Font Stylesheets -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
     <!-- Stylesheets -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- JavaScript Libraries -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Navbar Start -->
-        <div class="container-fluid sticky-top px-0">
-            <div class="container-fluid topbar d-none d-lg-block">
-              <div class="container px-0">
-                <div class="row align-items-center">
-                  <div class="col-lg-8">
-                    <div class="d-flex flex-wrap">
-                      <a href="#" class="me-4 text-light">
-                        <img src="img/icons/phone-icon.svg" alt="" style="width: 20px; height: 20px;"> +491234567890
-                      </a>
-                      <a href="#" class="text-light">
-                        <img src="img/icons/mail-icon.svg" alt="" style="width: 20px; height: 20px;"> Example@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="d-flex align-items-center justify-content-end">
-                      <a href="#" class="me-3 btn-square border rounded-circle nav-fill">
-                        <img src="img/icons/facebook-icon.svg"></img>
-                      </a>
-                      <a href="#" class="me-3 btn-square border rounded-circle nav-fill">
-                        <img src="img/icons/x-icon.svg"></img>
-                      </a>
-                      <a href="#" class="me-3 btn-square border rounded-circle nav-fill">
-                        <img src="img/icons/instagram-icon.svg"></img>
-                      </a>
-                      <a href="#" class="me-3 btn-square border rounded-circle nav-fill">
-                        <img src="img/icons/youtube-icon.svg"></img>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top px-0">
+      <div class="container-fluid topbar d-none d-lg-block">
+        <div class="container px-0">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="d-flex flex-wrap">
+                <a href="#" class="me-4 text-light">
+                  <img
+                    src="img/icons/phone-icon.svg"
+                    alt=""
+                    style="width: 20px; height: 20px"
+                  />
+                  +491234567890
+                </a>
+                <a href="#" class="text-light">
+                  <img
+                    src="img/icons/mail-icon.svg"
+                    alt=""
+                    style="width: 20px; height: 20px"
+                  />
+                  Example@gmail.com
+                </a>
               </div>
             </div>
-            <div class="container-fluid bg-light">
-              <div class="container px-0">
-                <nav class="navbar navbar-light navbar-expand-xl">
-                  <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary display-6">Physiotherapie Muster</h1>
+            <div class="col-lg-4">
+              <div class="d-flex align-items-center justify-content-end">
+                <a
+                  href="#"
+                  class="me-3 btn-square border rounded-circle nav-fill"
+                >
+                  <img src="img/icons/facebook-icon.svg" />
+                </a>
+                <a
+                  href="#"
+                  class="me-3 btn-square border rounded-circle nav-fill"
+                >
+                  <img src="img/icons/x-icon.svg" />
+                </a>
+                <a
+                  href="#"
+                  class="me-3 btn-square border rounded-circle nav-fill"
+                >
+                  <img src="img/icons/instagram-icon.svg" />
+                </a>
+                <a
+                  href="#"
+                  class="me-3 btn-square border rounded-circle nav-fill"
+                >
+                  <img src="img/icons/youtube-icon.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-light">
+        <div class="container px-0">
+          <nav class="navbar navbar-light navbar-expand-xl">
+            <a href="index.html" class="navbar-brand">
+              <h1 class="text-primary display-6">Physiotherapie Muster</h1>
+            </a>
+            <button
+              class="navbar-toggler py-2 px-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse bg-light py-3"
+              id="navbarCollapse"
+            >
+              <div class="navbar-nav mx-auto border-top">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Über Uns</a>
+                <a href="news.html" class="nav-item nav-link">Aktuelles</a>
+                <div class="nav-item dropdown">
+                  <a
+                    href="leistungen.html"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >Leistungen
                   </a>
-                  <button
-                    class="navbar-toggler py-2 px-3"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
-                  >
-                  <span class="fa fa-bars text-primary"></span>
-                  </button>
-                  <div
-                    class="collapse navbar-collapse bg-light py-3"
-                    id="navbarCollapse"
-                  >
-                    <div class="navbar-nav mx-auto border-top">
-                      <a href="index.html" class="nav-item nav-link active">Home</a>
-                      <a href="about.html" class="nav-item nav-link">Über Uns</a>
-                      <a href="news.html" class="nav-item nav-link">Aktuelles</a>
-                      <div class="nav-item dropdown">
-                        <a
-                          href="leistungen.html"
-                          class="nav-link dropdown-toggle"
-                          data-bs-toggle="dropdown"
-                          >Leistungen
-                        </a>
-                        <ul class="dropdown-menu m-0 bg-secondary rounded-0">
-                            <li>
-                              <a href="leistungen.html#krankengymnastik" class="dropdown-item"
-                              >Krankengymnastik</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#krankengymnastikAmGeraet" class="dropdown-item"
-                              >Krankengymnastik am Gerät</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#physikalischeTherapie" class="dropdown-item"
-                              >Physikalische Therapie</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#massage" class="dropdown-item"
-                              >Massage</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#manuelleTherapie" class="dropdown-item"
-                              >Manuelle Therapie</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#krankengymnastikZns" class="dropdown-item"
-                              >Krankengymnastik ZNS</a
-                            >
-                            </li>
-                            <li>
-                              <a href="leistungen.html#gesundheitscoaching" class="dropdown-item"
-                              >Gesundheitscoaching</a
-                            >
-                            </li>
-                          </ul>
-                      </div>
-                      <a href="contact.html" class="nav-item nav-link">Kontakt</a>
-                    </div>
-                    <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                  <ul class="dropdown-menu m-0 bg-secondary rounded-0">
+                    <li>
                       <a
-                        href="appointment.html"
-                        class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4"
-                        >Termin vereinbaren</a
+                        href="leistungen.html#krankengymnastik"
+                        class="dropdown-item"
+                        >Krankengymnastik</a
                       >
-                    </div>
-                  </div>
-                </nav>
+                    </li>
+                    <li>
+                      <a
+                        href="leistungen.html#krankengymnastikAmGeraet"
+                        class="dropdown-item"
+                        >Krankengymnastik am Gerät</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="leistungen.html#physikalischeTherapie"
+                        class="dropdown-item"
+                        >Physikalische Therapie</a
+                      >
+                    </li>
+                    <li>
+                      <a href="leistungen.html#massage" class="dropdown-item"
+                        >Massage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="leistungen.html#manuelleTherapie"
+                        class="dropdown-item"
+                        >Manuelle Therapie</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="leistungen.html#krankengymnastikZns"
+                        class="dropdown-item"
+                        >Krankengymnastik ZNS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="leistungen.html#gesundheitscoaching"
+                        class="dropdown-item"
+                        >Gesundheitscoaching</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+              </div>
+              <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                <a
+                  href="appointment.html"
+                  class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4"
+                  >Termin vereinbaren</a
+                >
               </div>
             </div>
-          </div>
-        <!-- Navbar End -->
-
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb py-5">
-            <div class="container text-center py-5">
-                <h3 class="text-white display-3 mb-4">Aktuelles</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active text-white">Aktuelles</li>
-                </ol>    
-            </div>
+          </nav>
         </div>
-        <!-- Header End -->
-        
-        <!-- News Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                    <h1 class="display-4 mb-4">Aktuelles</h1>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/news.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title"><span class="text-danger">!Achtung!</span> Sommerpause</h5>
-                          <p class="card-text">Unsere Praxis ist eine Woche, vom 22.7. - 26.07.24 geschlossen. Wir bitten um Entschuldigung, dass wir die Praxis in diesen Zeitraum schließen müssen. Bei äußerst dringenden Therapiebedarf setzen Sie sich bitte mit uns in den nächsten Tagen in Verbindung, damit wir gemeinsam eine Lösung für Sie finden können. <br><br>Mit freundlichen Grüßen,<br>Ihr Team der Physiotherapiepraxis Muster</p>
-                          <p class="card-text"><small class="text-body-secondary">16.06.2024</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/news.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Angebot Massage</h5>
-                          <p class="card-text">Na, haben Sie mal wieder schmerzhafte Nackenverspannungen? Dann nutzen Sie jetzt unser Angebot für eine Massage! Statt 30,- kostet eine 20 minütige Einheit jetzt nur noch 20,-. Das Angebot läuft einen Monat, bis zum 06.06.24! <br><br>Mit freundlichen Grüßen,<br>Ihr Team der Physiotherapiepraxis Muster</p>
-                          <p class="card-text"><small class="text-body-secondary">06.05.2024</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/news.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Neueröffnung Trainingsfläche</h5>
-                          <p class="card-text">Momentan befindet sich die Renovierung unserer Trainingsfläche in den letzten Zügen! Ab dem 12.02.24 habt Ihr wieder die Möglichkeit in unseren Räumlichkeiten zu trainieren. Tretet mit uns in Kontakt, wenn Ihr mehr über eine Mitgliedschaft erfahren möchtet. <br><br>Mit freundlichen Grüßen,<br>Ihr Team der Physiotherapiepraxis Muster</p>
-                          <p class="card-text"><small class="text-body-secondary">03.02.2024</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/news.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Titel</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
-                          <p class="card-text"><small class="text-body-secondary">01.01.2024</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <!-- News End -->
+      </div>
+    </div>
+    <!-- Navbar End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5">
-          <div class="container py-5">
-            <div class="row g-5">
-              <div class="col-md-4 col-lg-4 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                  <h4 class="mb-4 text-white">Leistungen</h4>
-                  <a href="leistungen.html#krankengymnastik"><img src="img/icons/angle-right-icon.svg" alt=""> Krankengymnastik</a>
-                  <a href="leistungen.html#krankengymnastikAmGeraet"><img src="img/icons/angle-right-icon.svg" alt=""> Krankengymnastik am Gerät</a>
-                  <a href="leistungen.html#physikalischeTherapie"><img src="img/icons/angle-right-icon.svg" alt=""> Physikalische Therapie</a>
-                  <a href="leistungen.html#massage"><img src="img/icons/angle-right-icon.svg" alt=""> Massage</a>
-                  <a href="leistungen.html#manuelleTherapie"><img src="img/icons/angle-right-icon.svg" alt=""> Manuelle Therapie</a>
-                  <a href="leistungen.html#krankengymnastikZns"><img src="img/icons/angle-right-icon.svg" alt=""> Krankengymnastik ZNS</a>
-                  <a href="leistungen.html#gesundheitscoaching"><img src="img/icons/angle-right-icon.svg" alt=""> Gesundheitscoaching</a>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4 col-xl-6">
-                <div class="footer-item d-flex flex-column">
-                  <h4 class="mb-4 text-white">Öffnungszeiten</h4>
-                  <p class="text-muted mb-0">Montag bis Donnerstag: <br>08:00 Uhr – 20:00 Uhr</p>
-                  <p class="text-muted mb-0">Freitag: 08:00 Uhr – 16:00 Uhr</p>
-                  <p class="text-muted mb-0">Samstag: 08:00 Uhr – 13:00 Uhr</p>
-                  <p class="text-muted mb-0">Sonntag: Geschlossen</p>
-                  <h4 class="my-4 text-white">Adresse</h4>
-                  <p class="mb-0">
-                    <img src="img/icons/location-dot-icon.svg" alt="">
-                    123 Beispielstraße Göttingen, Niedersachsen
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                  <h4 class="mb-4 text-white">Folge Uns</h4>
-                  <a href="#"><img src="img/icons/angle-right-icon.svg" alt=""> Facebook</a>
-                  <a href="#"><img src="img/icons/angle-right-icon.svg" alt=""> Instagram</a>
-                  <a href="#"><img src="img/icons/angle-right-icon.svg" alt=""> X</a>
-                  <h4 class="my-4 text-white">Nimm Kontakt auf</h4>
-                  <p class="mb-0">
-                    <img src="img/icons/mail-icon.svg" alt="" style="width: 20px; height: 20px;">
-                    Example@gmail.com
-                  </p>
-                  <p class="mb-0">
-                    <img src="img/icons/phone-icon.svg" alt="" style="width: 20px; height: 20px;">
-                    +491234567890
-                  </p>
-                </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb py-5">
+      <div class="container text-center py-5">
+        <h3 class="text-white display-3 mb-4">Aktuelles</h3>
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-white">Aktuelles</li>
+        </ol>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- News Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px">
+          <h1 class="display-4 mb-4">Aktuelles</h1>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/news.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span class="text-danger">!Achtung!</span> Sommerpause
+                </h5>
+                <p class="card-text">
+                  Unsere Praxis ist eine Woche, vom 22.7. - 26.07.24
+                  geschlossen. Wir bitten um Entschuldigung, dass wir die Praxis
+                  in diesen Zeitraum schließen müssen. Bei äußerst dringenden
+                  Therapiebedarf setzen Sie sich bitte mit uns in den nächsten
+                  Tagen in Verbindung, damit wir gemeinsam eine Lösung für Sie
+                  finden können. <br /><br />Mit freundlichen Grüßen,<br />Ihr
+                  Team der Physiotherapiepraxis Muster
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">16.06.2024</small>
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Footer End -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/news.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Angebot Massage</h5>
+                <p class="card-text">
+                  Na, haben Sie mal wieder schmerzhafte Nackenverspannungen?
+                  Dann nutzen Sie jetzt unser Angebot für eine Massage! Statt
+                  30,- kostet eine 20 minütige Einheit jetzt nur noch 20,-. Das
+                  Angebot läuft einen Monat, bis zum 06.06.24! <br /><br />Mit
+                  freundlichen Grüßen,<br />Ihr Team der Physiotherapiepraxis
+                  Muster
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">06.05.2024</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/news.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Neueröffnung Trainingsfläche</h5>
+                <p class="card-text">
+                  Momentan befindet sich die Renovierung unserer Trainingsfläche
+                  in den letzten Zügen! Ab dem 12.02.24 habt Ihr wieder die
+                  Möglichkeit in unseren Räumlichkeiten zu trainieren. Tretet
+                  mit uns in Kontakt, wenn Ihr mehr über eine Mitgliedschaft
+                  erfahren möchtet. <br /><br />Mit freundlichen Grüßen,<br />Ihr
+                  Team der Physiotherapiepraxis Muster
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">03.02.2024</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/news.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Titel</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium. Integer
+                  tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                  vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                  consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                  dapibus in, viverra quis, feugiat a.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">01.01.2024</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News End -->
 
-        <!-- Copyright Start -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-4 col-lg-4 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Leistungen</h4>
+              <a href="leistungen.html#krankengymnastik"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Krankengymnastik</a
+              >
+              <a href="leistungen.html#krankengymnastikAmGeraet"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Krankengymnastik am Gerät</a
+              >
+              <a href="leistungen.html#physikalischeTherapie"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Physikalische Therapie</a
+              >
+              <a href="leistungen.html#massage"
+                ><img src="img/icons/angle-right-icon.svg" alt="" /> Massage</a
+              >
+              <a href="leistungen.html#manuelleTherapie"
+                ><img src="img/icons/angle-right-icon.svg" alt="" /> Manuelle
+                Therapie</a
+              >
+              <a href="leistungen.html#krankengymnastikZns"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Krankengymnastik ZNS</a
+              >
+              <a href="leistungen.html#gesundheitscoaching"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Gesundheitscoaching</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-6">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Öffnungszeiten</h4>
+              <p class="text-muted mb-0">
+                Montag bis Donnerstag: <br />08:00 Uhr – 20:00 Uhr
+              </p>
+              <p class="text-muted mb-0">Freitag: 08:00 Uhr – 16:00 Uhr</p>
+              <p class="text-muted mb-0">Samstag: 08:00 Uhr – 13:00 Uhr</p>
+              <p class="text-muted mb-0">Sonntag: Geschlossen</p>
+              <h4 class="my-4 text-white">Adresse</h4>
+              <p class="mb-0">
+                <img src="img/icons/location-dot-icon.svg" alt="" />
+                123 Beispielstraße Göttingen, Niedersachsen
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Folge Uns</h4>
+              <a href="#"
+                ><img src="img/icons/angle-right-icon.svg" alt="" /> Facebook</a
+              >
+              <a href="#"
+                ><img src="img/icons/angle-right-icon.svg" alt="" />
+                Instagram</a
+              >
+              <a href="#"
+                ><img src="img/icons/angle-right-icon.svg" alt="" /> X</a
+              >
+              <h4 class="my-4 text-white">Nimm Kontakt auf</h4>
+              <p class="mb-0">
+                <img
+                  src="img/icons/mail-icon.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+                Example@gmail.com
+              </p>
+              <p class="mb-0">
+                <img
+                  src="img/icons/phone-icon.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+                +491234567890
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-md-6 text-center text-md-start mb-md-0">
             <span class="text-light">
               <a href="index.html">
-                <img src="img/icons/copyright-icon.svg" alt="Copyright Icon" style="width: 20px; height: 20px;">
+                <img
+                  src="img/icons/copyright-icon.svg"
+                  alt="Copyright Icon"
+                  style="width: 20px; height: 20px"
+                />
                 Physiotherapiepraxis Muster, 2024
               </a>
               |
-                <a href="impressum.html">Impressum & Datenschutz</a>
-              </span>
+              <a href="impressum.html">Impressum & Datenschutz</a>
+            </span>
           </div>
           <div class="col-md-6">
             <div class="d-flex justify-content-end">
-              <a href="#" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2">
-                <img src="img/icons/facebook-icon.svg" alt="">
+              <a
+                href="#"
+                class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"
+              >
+                <img src="img/icons/facebook-icon.svg" alt="" />
               </a>
-              <a href="#" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2">
-                <img src="img/icons/x-icon.svg" alt="">
+              <a
+                href="#"
+                class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"
+              >
+                <img src="img/icons/x-icon.svg" alt="" />
               </a>
-              <a href="#" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2">
-                <img src="img/icons/instagram-icon.svg" alt="">
+              <a
+                href="#"
+                class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"
+              >
+                <img src="img/icons/instagram-icon.svg" alt="" />
               </a>
-              <a href="#" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2">
-                <img src="img/icons/youtube-icon.svg" alt="">
+              <a
+                href="#"
+                class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"
+              >
+                <img src="img/icons/youtube-icon.svg" alt="" />
               </a>
             </div>
           </div>
@@ -322,8 +480,9 @@
     <!-- Back to Top -->
     <a
       href="#"
-      class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top">
-      <img src="img/icons/arrow-up-icon.svg" alt="Zurück nach oben">
+      class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"
+    >
+      <img src="img/icons/arrow-up-icon.svg" alt="Zurück nach oben" />
     </a>
-    </body>
+  </body>
 </html>
