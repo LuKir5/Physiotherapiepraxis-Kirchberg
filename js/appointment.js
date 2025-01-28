@@ -66,7 +66,7 @@ document
 
     // AJAX-Anfrage
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "api/send_mail_appointment.php", true);
+    xhr.open("POST", "/api/send_mail_appointment.php", true);
     xhr.onload = function () {
       if (xhr.status === 200) {
         alert(xhr.responseText);
